@@ -1,6 +1,9 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 /* General Styling */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   margin: 0;
   padding: 0;
   background: linear-gradient(to right, #8b0000, #b22222);
@@ -54,17 +57,6 @@ a {
 
 a:hover {
   color: #ff4500;
-}
-
-/* Horizontal Links */
-.links ul {
-  padding: 0;
-  display: flex;
-  gap: 20px;
-}
-
-.links li {
-  list-style: none;
 }
 
 /* Lists */
