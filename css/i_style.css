@@ -1,0 +1,70 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: #fff;
+    line-height: 1.8;
+  }
+  
+  /* Header Styling */
+  h1, h2, h3, h4 {
+    font-family: 'Georgia', serif;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 2rem 0;
+    color: #f7b733;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    border-bottom: 2px solid #f7b733;
+    padding-bottom: 0.5rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    color: #4ecdc4;
+  }
+   
+  /* Section Styling */
+  section {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    margin-bottom: 2rem;
+  }
+  
+  /* Links */
+  a {
+    color: #4ecdc4;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  a:hover {
+    color: #ff6b6b;
+  }
+  
+  /* Lists */
+  ul {
+    list-style-type: square;
+  }
+  
+  li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Contact Information */
+  p {
+    text-align: center;
+    font-size: 1.1rem;
+  } 
