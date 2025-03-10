@@ -57,13 +57,13 @@ a:hover {
 }
 
 /* Horizontal Links */
-.links ul {
+#links ul {
   padding: 0;
   display: flex;
   gap: 20px;
 }
 
-.links li {
+#links li {
   list-style: none;
 }
 
