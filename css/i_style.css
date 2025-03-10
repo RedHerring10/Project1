@@ -56,6 +56,17 @@ a:hover {
   color: #ff4500;
 }
 
+/* Horizontal Links */
+.links ul {
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.links li {
+  list-style: none;
+}
+
 /* Lists */
 ul {
   list-style-type: square;
