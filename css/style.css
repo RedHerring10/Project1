@@ -15,6 +15,7 @@ body {
 
 .links {
   text-align: center;
+  display: inline-block;
 }
 
 /* Header Styling */
