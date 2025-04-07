@@ -55,13 +55,8 @@ section {
 
 /* Links */
 a {
-  color: #cd5c5c;
   text-decoration: none;
   transition: color 0.3s;
-}
-
-a:hover {
-  color: #ff4500;
 }
 
 /* Lists */
