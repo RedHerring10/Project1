@@ -20,7 +20,7 @@ body {
 
 /* Arrange list items horizontally */
 .links li {
-  float: inline-start;
+  float: center;
   margin: 0 15px; 
   font-size: 20px;
 }
