@@ -15,13 +15,14 @@ body {
 
 .links {
   text-align: center;
+  overflow: hidden;
 }
 
 /* Arrange list items horizontally */
 .links li {
   float: left;
   margin: 0 15px; 
-  font-size: 25px;
+  font-size: 20px;
 }
 
 /* Header Styling */
