@@ -18,15 +18,16 @@ body {
 }
 
 /* Header Styling */
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: 'Roboto', 'Trebuchet MS';
+  color: #fff;
 }
 
 h1 {
   font-size: 40px;
   text-align: center;
   margin: 40px 0;
-  color: #ff6347;
+ 
 }
 
 h2 {
@@ -38,7 +39,7 @@ h2 {
 h4 {
   font-size: 1.5rem;
   margin-top: 1.5rem;
-  color: #cd5c5c;
+
 }
 
 /* Section Styling */
