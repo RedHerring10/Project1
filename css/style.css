@@ -61,7 +61,7 @@ a {
 
 /* Lists */
 ul {
-  list-style-type: square;
+  list-style-type: none;
 }
 
 li {
