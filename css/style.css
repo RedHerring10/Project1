@@ -15,7 +15,7 @@ body {
 
 /* Header Styling */
 h1, h2, h3 {
-  font-family: 'Georgia', serif;
+  font-family: 'Roboto', 'Trebuchet MS';
 }
 
 h1 {
@@ -35,6 +35,13 @@ h4 {
   font-size: 1.5rem;
   margin-top: 1.5rem;
   color: #cd5c5c;
+
+  display: block;
+  margin: 20px auto;
+  max-width: 80%;
+  height: auto;
+  border-radius: 8px;
+  border: 5px solid rgba(0, 0, 0, 0.5);
 }
 
 /* Section Styling */
@@ -53,13 +60,6 @@ a {
   color: #cd5c5c;
   text-decoration: none;
   transition: color 0.3s;
-
-  display: block;
-  margin: 20px auto;
-  max-width: 80%;
-  height: auto;
-  border-radius: 8px;
-  border: 5px solid rgba(0, 0, 0, 0.5);
 }
 
 a:hover {
