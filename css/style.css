@@ -15,7 +15,12 @@ body {
 
 .links {
   text-align: center;
+}
+
+/* Arrange list items horizontally */
+.links li {
   display: inline-block;
+  margin: 0 15px; 
 }
 
 /* Header Styling */
