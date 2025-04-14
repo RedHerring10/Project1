@@ -97,7 +97,15 @@ img {
   border: 5px solid rgba(0, 0, 0, 0.5);
 }
 
-/* ----------- MEDIA QUERIES ----------- */
+/* Maps Styling */
+
+/* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+ gmp-map {
+  height: 100%;
+}
+
+/* Media Queries */
 
 /* Mobile (0px to 480px) */
 @media (max-width: 480px) {

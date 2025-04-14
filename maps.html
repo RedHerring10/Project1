@@ -6,6 +6,8 @@
   <title>Maps</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbBUFH-4aE1p1CIBO2Hk_8-8_SEXJyTHA&callback=console.debug&libraries=maps,marker&v=beta">
+  </script>
 </head>
 
 <body>
@@ -21,7 +23,11 @@
     <section>
         <h1>Google Maps</h1>
         <p>IIT is currently the only place where Nearu is being taught in the U.S. But it used to be tought at the University at Buffalo</p>
-      </section>
+    </section>
+    <section>
+        <gmp-map center="43.001895904541016,-78.78955841064453" zoom="14" map-id="DEMO_MAP_ID">
+        <gmp-advanced-marker position="43.001895904541016,-78.78955841064453" title="My location"></gmp-advanced-marker>
+        </gmp-map>
+    </section>
 </body>
-
 </html>
