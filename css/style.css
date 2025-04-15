@@ -205,45 +205,44 @@ img {
   }
 }
 
-.slider{
+.slider-container {
   position: relative;
-  width: 100%;
-  margin: auto;
+  width: 80%;
+  max-width: 600px;
   overflow: hidden;
 }
 
-.slider img{
+.slider {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
   width: 100%;
-  display: none;
+  height: auto;
 }
 
-img.displaySlide{
-  display: block;
-  animation-name: fade;
-  animation-duration: 1s;
-}
-
-.slider button{
+button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 2rem;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
+  border: none;
+  padding: 10px;
+  font-size: 24px;
   cursor: pointer;
-  padding: 10px 15px;
+  z-index: 1;
 }
 
-.previous{
-  left: 0;
+button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-.next{
-  right: 0;
+.prev {
+  left: 10px;
 }
 
-@keyframes fade {
-  from {opacity: .5}
-  to {opacity: 1}
+.next {
+  right: 10px;
 }
-

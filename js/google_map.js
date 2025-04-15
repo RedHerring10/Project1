@@ -4,35 +4,24 @@ document.getElementById("back-to-top").onclick = function() {
 }
 
 
-initializeSlider();
+// Image slider functionality
+let currentIndex = 0;
 
-function initializeSlider(){
-    slides[slideIndex].classList.add("displaySlider");
-    intervalId = setInterval(nextSLider, 5000);
-}
+function changeSlide(direction) {
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length;
 
-function showSlider(index){
+    // Update currentIndex based on the direction
+    currentIndex += direction;
 
-    if(index >= slides.length){
-        slideIndex = 0;
+    // Loop to the first/last slide
+    if (currentIndex < 0) {
+        currentIndex = totalSlides - 1;
+    } else if (currentIndex >= totalSlides) {
+        currentIndex = 0;
     }
-    else if(index < 0){
-        slideIndex = slides.length - 1;
-    }
 
-    slides.forEach(slide => {
-        slide.classList.remove("displaySlide");
-    });
-    slides[slideIndex].classList.add("displaySlide");
-}
-
-function prevSlider(){
-    slideIndex--;
-    showSlider(slideIndex)
-
-}
-
-function nextSLider(){
-    slideIndex++;
-    showSlider(slideIndex);
+    // Move the slider by adjusting the translateX value
+    const slider = document.querySelector('.slider');
+    slider.style.transform = `translateX(-${currentIndex * 100}%)`;
 }
