@@ -209,9 +209,3 @@ img.displaySlide{
   display: block;
 }
 
-.slider button{
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 2rem;
-}
