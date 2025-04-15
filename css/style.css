@@ -204,3 +204,45 @@ img {
     margin: 0 auto;
   }
 }
+
+/* Basic styling for the slider */
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 100;
+}
+
+.prev {
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+.next {
+  right: 10px;
+  transform: translateY(-50%);
+}
