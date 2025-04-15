@@ -99,16 +99,22 @@ img {
 
 /* Style for back-to-top button */
 #back-to-top {
-  width: 200px;
-  color: white;
+  position: fixed;
+  bottom: 20px;       /* Distance from the bottom of the screen */
+  right: 20px;        /* Distance from the right edge (adjust as needed) */
+  padding: 10px 15px;
+  font-size: 16px;
   background-color: red;
-  margin: 20px auto;
-  padding: 2em 0;
-  text-align: center; 
-  font-size: 24px;
-  font-weight: bold;
-  justify-content: center;
-  align-items: center;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;      /* Keeps it above other elements */
+  display: none;      /* You can toggle this with JavaScript */
+}
+
+#back-to-top:hover {
+  background-color: #555;
 }
 
 /* Maps Styling */
