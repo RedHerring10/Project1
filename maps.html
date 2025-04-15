@@ -3,10 +3,20 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Maps</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
-  <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbBUFH-4aE1p1CIBO2Hk_8-8_SEXJyTHA&callback=console.debug&libraries=maps,marker&v=beta">
+  <script src="js/google_map.js" defer></script> 
+  <script>
+    const CONFIGURATION = {
+      "locations": [
+        {"title":"University at Buffalo (North Campus)","address1":"190 Founders Prom","address2":"Getzville, NY 14068, USA","coords":{"lat":43.00201510457078,"lng":-78.78948634907378},"placeId":"ChIJnwQbJtJz04kRb_XET01paCg"}
+      ],
+      "mapOptions": {"center":{"lat":38.0,"lng":-100.0},"fullscreenControl":true,"mapTypeControl":false,"streetViewControl":false,"zoom":4,"zoomControl":true,"maxZoom":17,"mapId":""},
+      "mapsApiKey": "AIzaSyBbBUFH-4aE1p1CIBO2Hk_8-8_SEXJyTHA",
+      "capabilities": {"input":false,"autocomplete":false,"directions":false,"distanceMatrix":false,"details":false,"actions":false}
+    };
   </script>
 </head>
 
@@ -25,9 +35,13 @@
         <p>IIT is currently the only place where Nearu is being taught in the U.S. But it used to be tought at the University at Buffalo</p>
     </section>
     <section>
-        <gmp-map center="43.001895904541016,-78.78955841064453" zoom="14" map-id="DEMO_MAP_ID">
-        <gmp-advanced-marker position="43.001895904541016,-78.78955841064453" title="My location"></gmp-advanced-marker>
-        </gmp-map>
+        <script type="module" src="https://ajax.googleapis.com/ajax/libs/@googlemaps/extended-component-library/0.6.11/index.min.js"></script>
+
+        <!-- Uses components from the Extended Component Library; see
+         https://github.com/googlemaps/extended-component-library for more information
+         on these HTML tags and how to configure them. -->
+        <gmpx-api-loader key="AIzaSyBbBUFH-4aE1p1CIBO2Hk_8-8_SEXJyTHA" solution-channel="GMP_QB_locatorplus_v11_c"></gmpx-api-loader>
+        <gmpx-store-locator map-id="DEMO_MAP_ID"></gmpx-store-locator>
     </section>
 </body>
 </html>
