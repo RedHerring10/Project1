@@ -98,23 +98,34 @@ img {
 }
 
 /* Style for back-to-top button */
-#back-to-top {
+/* Stick footer to bottom of screen */
+.footer {
   position: fixed;
-  bottom: 20px;       /* Distance from the bottom of the screen */
-  right: 20px;        /* Distance from the right edge (adjust as needed) */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: red;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center;  /* Center the button */
+  align-items: center;
+  z-index: 999;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.2);
+}
+
+/* Style the Back to Top button */
+#back-to-top {
   padding: 10px 15px;
   font-size: 16px;
-  background-color: red;
-  color: white;
+  background-color: #444;
+  color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  z-index: 1000;      /* Keeps it above other elements */
-  display: none;      /* You can toggle this with JavaScript */
 }
 
 #back-to-top:hover {
-  background-color: #555;
+  background-color: #666;
 }
 
 /* Maps Styling */
