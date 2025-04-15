@@ -99,8 +99,15 @@ img {
 
 /* Maps Styling */
 .maps {
-  width: 80vw;   /* 80% of the viewport width */
-  height: 60vh;  /* 60% of the viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  min-height: 500px; /* Ensures a minimum height for the map section */
+  width: 100%;
+  height: 80vh; /* 80% of the viewport height */
+  max-width: 1200px; /* Ensures it doesn't stretch too wide */
+  border: none;
 }
 
 /* Media Queries */
